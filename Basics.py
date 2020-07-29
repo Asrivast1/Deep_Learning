@@ -21,8 +21,7 @@ print("For loop:", (toc-tic)*1000, "ms") # The time difference again, vectorized
 # Vectorization
 a = np.array([[56.0, 0.0, 4.4, 68.0],
               [1.2, 104.0, 52.0, 8.0],
-              [1.8, 135.0, 99.0, 0.9]
-             ])
+              [1.8, 135.0, 99.0, 0.9]])
 print(a)
 tot = a.sum(axis=0)
 perc = 100*a/tot.reshape(1, 4) # Use of reshape() is encouraged to make sure you get the correct sized matrix for performing the operations
